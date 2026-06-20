@@ -41,3 +41,5 @@ pydantic
 html5lib
 jinja2
 langchain-deepseek
+fastapi
+uvicorn
