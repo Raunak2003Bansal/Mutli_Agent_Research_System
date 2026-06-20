@@ -37,9 +37,7 @@ tenacity
 
 # JSON handling improvements
 orjson
-
-# Typing support (helps in bigger projects)
 pydantic
-
-# Optional (for advanced parsing / HTML cleanup)
 html5lib
+jinja2
+langchain-deepseek
