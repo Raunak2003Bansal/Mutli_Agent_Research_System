@@ -1,8 +1,9 @@
 from utils.pydantic_output import ResearchReport
-from utils.agents import run_scraping_pipeline, writer_chain
+from utils.agents import run_scraping_pipeline, writer_chain, web_scrapping_parallel
 
 def run_research_pipeline(topic : str) -> str:
-    content = run_scraping_pipeline(topic)
+    urls = run_scraping_pipeline(topic)
+    content = web_scrapping_parallel(urls)
     result = writer_chain.invoke({"topic": topic, "scraped_content": content})
     return result
 
