@@ -43,3 +43,8 @@ jinja2
 langchain-deepseek
 fastapi
 uvicorn
+motor 
+pydantic 
+bcrypt 
+python-multipart
+email-validator
